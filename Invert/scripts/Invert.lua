@@ -2,10 +2,10 @@
 
   Application Name:
   Invert
-                                                                                             
+
   Summary:
   Inverting image, bright becomes dark and vice versa.
-  
+
   How to Run:
   Starting this sample is possible either by running the app (F5) or
   debugging (F7+F10). Setting breakpoint on the first row inside the 'main'
@@ -15,19 +15,17 @@
   To run this Sample a device with SICK Algorithm API and AppEngine >= V2.5.0 is
   required. For example SIM4000 with latest firmware. Alternatively the Emulator
   in AppStudio 2.3 or higher can be used.
-       
+
   More Information:
   Tutorial "Algorithms - Filtering and Arithmetic".
 
 ------------------------------------------------------------------------------]]
-
 --Start of Global Scope---------------------------------------------------------
 
 print('AppEngine Version: ' .. Engine.getVersion())
 
 -- Creating viewer
 local viewer = View.create()
-viewer:setID('viewer2D')
 
 --End of Global Scope-----------------------------------------------------------
 
