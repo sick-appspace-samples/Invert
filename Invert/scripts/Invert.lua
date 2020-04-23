@@ -24,6 +24,8 @@
 
 print('AppEngine Version: ' .. Engine.getVersion())
 
+local DELAY = 2000 -- ms between each type for demonstration purpose
+
 -- Creating viewer
 local viewer = View.create()
 
@@ -36,7 +38,7 @@ local function main()
   local img = Image.load('resources/Invert.bmp')
   viewer:addImage(img)
   viewer:present()
-  Script.sleep(2000) -- for demonstration purpose only
+  Script.sleep(DELAY) -- for demonstration purpose only
 
   -- Inverting image
   local img2 = img:invert()
